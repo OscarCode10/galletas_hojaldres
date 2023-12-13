@@ -21,8 +21,9 @@
 .nav {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     margin-top: 1%;
-    margin-left: 8%;
+    margin-left: 1%;
 }
 
 .head {
@@ -30,9 +31,13 @@
 }
 
 .nav .logDes {
-    margin-left: 48%;   
+    margin-right: 10rem;
     height: 15%;
     width: 10%;
+}
+
+.imgMobile {
+    display: none;
 }
 
 .nav ul {
@@ -42,10 +47,16 @@
 }
 
 .nav ul li {
-    margin-left: 2rem;
+    width: 14.1rem;
+    height: 3rem;
     color: var(--1);
-    font-size: 1.8rem;
+    font-size: 170%;
     font-weight: 500;
+    cursor: pointer;
+}
+
+.ini {
+    text-align: center;
 }
 
 .menu {
@@ -54,9 +65,14 @@
 
 @media screen and (max-width: 1024px) {
 
+    .nav .logDes {
+        display: none;
+    }
+
     .nav {
         margin-left: 0;
-        display: flex;
+        display: none;
+        justify-content: center;
         flex-direction: column;
         align-items: center;
         height: 25rem;
@@ -72,7 +88,6 @@
     }
     
     .nav ul {
-        margin-top: 3%;
         margin-right: 7%;
         width: 46%;
         display: flex;
@@ -106,9 +121,12 @@
         width: 5rem;
     }
 
-
-    .logDes{
+    .imgMobile {
         display: none;
+        position: absolute;
+        right: 5%;
+        top: .8%;
+        width: 23%;
     }
 
     .menu {
@@ -117,5 +135,6 @@
         margin-left: 2rem;
         height: 10%;
         width: 10%;
+        cursor: pointer;
     }
 }
