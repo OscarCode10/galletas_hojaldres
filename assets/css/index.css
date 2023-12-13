@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    top: 0;
+    font-family: 'Poppins';
+}
+
+:root {
+    --1: white;
+    --2: black;
+    --3: #D9731A;
+    --4: #E8B77F;
+    --5: #732C02;
+    --6: #C18E61;
+    --7: #221816;
+    --8: #846A31;
+    --9: #9F3B00;
+}
+
+body{
+    background-image: url("./../img/index.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+/* Text galletas 1 */
+
+.textGalletas1{
+    display: flex;
+    flex-direction: row;
+    height: 48%;
+}
+
+.textGalletas1 .text1 {
+    width: 36.9%; 
+    margin-left: 13%;
+    margin-top: 5%;
+}
+
+.textGalletas1 h1{
+    font-family: 'Lobster';
+    font-size: 5rem;
+    font-weight: 100;
+}
+
+.textGalletas1 p{
+    font-size: 2rem;
+    text-align: justify;
+}
+
+.imgVec1 img {
+    position: absolute;
+    width: 30%;
+    top: 34%;   
+    right: 9%;
+    width: 32%;
+    height: auto;
+}
+
+.imgVec1 .img1{
+    position: absolute;
+    width: 30%;
+    top: 34%;
+    right: 9.8%;
+}
+
+/* Text galletas 2 */
+
+.imgVec2 img {
+    margin-left: 58%;
+    position: absolute;
+    width: 33%;
+    top: 80%;
+    right: 53.2%;
+    height: auto;
+}
+
+.imgVec2 .img2{
+    position: absolute;
+    width: 30%;
+    top: 81.3%;
+    right: 54.6%;
+}
+
+.textGalletas2{
+    display: flex;
+    flex-direction: row;
+}
+
+.textGalletas2 .text2 {
+    width: 36.9%; 
+    margin-left: 58%;
+    margin-top: 26%;
+    height: 10rem;
+}
+
+
+.text2 input {
+    position: relative;
+    margin-bottom: 6rem;
+    margin-left: 3rem;
+    padding: 2rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    background-color: var(--3);
+    color: var(--1);
+}
+
+.textGalletas2 p{
+    font-size: 2rem;
+    text-align: justify;
+}
+
+
+
+@media screen and (max-width: 1024px){
+    body{
+        background-image: url("./../img/indexRes.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }   
+}

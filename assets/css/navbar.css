@@ -1,34 +1,121 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;500&display=swap');
 
-*{
+* {
     margin: 0;
     top: 0;
     font-family: 'Poppins';
 }
 
-:root{
-    --1:white;
-    --2:black;
-    --3:#D9731A;
-    --4:#E8B77F;
-    --5:#732C02;
-    --6:#C18E61;
-    --7:#221816;
-    --8:#846A31;
-    --9:#9F3B00;
+:root {
+    --1: white;
+    --2: black;
+    --3: #D9731A;
+    --4: #E8B77F;
+    --5: #732C02;
+    --6: #C18E61;
+    --7: #221816;
+    --8: #846A31;
+    --9: #9F3B00;
 }
 
-ul{
-    margin-top: 3%;
-    margin-left: 15%;
+.nav {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+    margin-left: 8%;
+}
+
+.head {
+    display: none;
+}
+
+.nav .logDes {
+    margin-left: 48%;   
+    height: 15%;
+    width: 10%;
+}
+
+.nav ul {
     display: flex;
     flex-direction: row;
     list-style: none;
 }
 
-li{
+.nav ul li {
     margin-left: 2rem;
     color: var(--1);
     font-size: 1.8rem;
     font-weight: 500;
+}
+
+.menu {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .nav {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 25rem;
+        background-color: var(--5);
+    }
+
+    .head {
+        margin-left: 2rem;
+        width: 78%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .nav ul {
+        margin-top: 3%;
+        margin-right: 7%;
+        width: 46%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        list-style: none;
+    }
+
+    .nav ul li {
+        margin-top: 2rem;
+        background-color: var(--9);
+        color: var(--1);
+        text-align: center;
+        border-radius: 1rem;
+        width: 180%;
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+
+    .head h1{
+        position: relative;
+        top: 4rem;
+        font-size: 200%;
+        color: var(--1);
+    }
+
+    .head img {
+        position: relative;
+        top: 2rem;
+        height: 5rem;
+        width: 5rem;
+    }
+
+
+    .logDes{
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        margin-top: 2rem;
+        margin-left: 2rem;
+        height: 10%;
+        width: 10%;
+    }
 }
