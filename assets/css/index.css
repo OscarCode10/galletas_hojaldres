@@ -32,11 +32,12 @@ body {
 .textGalletas1 {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     height: 58%;
 }
 
 .textGalletas1 .text1 {
-    margin-left: 13%;
+    padding-inline-start: 11%;
     margin-top: 7%;
 }
 
@@ -44,29 +45,29 @@ body {
     font-family: 'Lobster';
     font-size: 5rem;
     font-weight: 100;
+    width: 70%;
 }
 
 .text1 p {
-    width: 44%;
+    width: 70%;
     margin-top: 2rem;
     font-size: 180%;
     text-align: justify;
 }
 
-.imgVec1 img {
-    position: absolute;
-    width: 30%;
-    top: 34%;
-    right: 9%;
-    width: 32%;
+.imgVec1 img{
+    width: 30rem;
     height: auto;
+    margin-top: 2.2rem;
 }
 
-.imgVec1 .img1 {
-    position: absolute;
-    width: 30%;
-    top: 34%;
-    right: 9.8%;
+.imgVec1 {
+    width: 35rem;
+    margin-right: 3rem;
+    background-image: url('./../img/vectorImg.svg');
+    background-position: center center;
+    background-size: 31rem;
+    background-repeat: no-repeat;
 }
 
 /* Text galletas 2 */
@@ -131,355 +132,4 @@ body {
         font-weight: 100;
     }
     
-}
-
-@media screen and (max-width: 1425px) {
-    .textGalletas2 .text2 {
-        margin-top: 10%;
-    }
-}
-
-
-@media screen and (max-width: 1300px){
-    .textGalletas2 .text2 {
-        margin-top: 10%;
-    }
-
-    .text1 p {
-        width: 44%;
-        margin-top: 2rem;
-        font-size: 120%;
-        text-align: justify;
-    }    
-
-    .text2 p {
-        font-size: 120%;    
-        text-align: justify;
-    }
-
-    .imgVec2 img {
-        margin-left: 58%;
-        position: absolute;
-        width: 33%;
-        top: 55%;
-        right: 53.7%;
-        height: auto;
-    }
-    
-    .imgVec2 .img2 {
-        position: absolute;
-        width: 31%;
-        top: 55.7%;
-        right: 54.6%;
-    }
-
-    .text2 input {
-        margin-left: 2%;
-        padding: 2%;
-    }
-    
-}
-
-
-@media screen and (max-width: 1100px){
-    .textGalletas2 .text2 {
-        margin-top: 2%;
-    }
-}
-
-
-@media screen and (max-width: 1030px) {
-    body {
-        background-image: url("./../img/indexRes.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100vh;
-    }
-
-    .textGalletas1 .text1 {
-        margin-top: 11%;
-    }
-
-    .text1 p {
-        width: 79%;
-        margin-top: 2rem;
-        font-size: 2.1rem;
-        text-align: justify;
-    }
-
-    .imgVec1 img {
-        position: absolute;
-        width: 49%;
-        top: 72%;
-        right: 9%;
-        height: auto;
-    }
-
-    .imgVec1 .img1 {
-        position: absolute;
-        width: 46%;
-        top: 72.2%;
-        right: 10.3%;
-        height: auto;
-    }
-
-    .textGalletas2 .text2 {
-        width: 36.9%;
-        margin-left: 30%;
-        margin-top: 37%;
-        height: 10rem;
-    }
-    
-    .text2 p {
-        text-align: end;
-        font-size: 2.3rem;
-        width: 167%;
-    }
-    
-    .imgVec2 img {
-        margin-left: 58%;
-        position: absolute;
-        width: 54%;
-        top: 145%;
-        right: 35.2%;
-        height: auto;
-    }
-    
-    .imgVec2 .img2 {
-        position: absolute;
-        width: 50%;
-        top: 145.7%;
-        right: 37%;
-    }
-
-    .text2 input {
-        position: relative;
-        top: 420%;
-        left: 100%;
-    }
-}
-
-@media screen and (max-width: 971px){
-    .imgVec1 img {
-        top: 60%;
-    }
-
-    .imgVec1 .img1 {
-        top: 60.2%;
-    }
-
-    .imgVec2 img {
-        top: 131%;
-    }
-    
-    .imgVec2 .img2 {
-        top: 131.7%;
-    }
-
-    .textGalletas2 .text2 {
-        margin-top: 32%;
-    }
-
-    .text1 p {
-        font-size: 1.7rem;
-    }
-
-    .text2 p {
-        font-size: 1.7rem;
-    }
-
-    .text2 input {
-        top: 410%;
-    }
-}
-
-@media screen and (max-width: 960px){   
-    .textGalletas2 .text2 {
-        margin-top: 22%;
-    }
-
-    .imgVec2 img {
-        top: 111%;
-    }
-    
-    .imgVec2 .img2 {
-        top: 111.7%;
-    }
-    
-    .text2 input {
-        top: 410%;
-    }
-}
-
-
-@media screen and (max-width: 800px){
-    .imgVec1 img {
-        top: 45%;
-    }
-
-    .imgVec1 .img1 {
-        top: 45.2%;
-    }
-
-    .imgVec2 img {
-        top: 102%;
-    }
-    
-    .imgVec2 .img2 {
-        top: 102.7%;
-    }
-
-    .textGalletas2 .text2 {
-        margin-top: 11%;
-    }
-
-    .textGalletas1 h1 {
-        font-size: 2rem;
-    }
-
-    .text1 p {
-        font-size: 1.2rem;
-    }
-
-    .text2 p {
-        font-size: 1.2rem;
-    }
-
-    .text2 input {
-        top: 330%;
-        left: 80%;
-    }
-}
-
-@media screen and (max-width: 600px){
-
-    .imgVec1 img {
-        top: 37%;
-    }
-
-    .imgVec1 .img1 {
-        top: 37.2%;
-    }
-
-    .imgVec2 img {
-        top: 89%;
-    }
-    
-    .imgVec2 .img2 {
-        top: 89.7%;
-    }
-
-    .textGalletas2 .text2 {
-        margin-top: -1%;
-    }
-
-    .text2 p {
-        font-size: 1rem;
-    }
-
-    .text1 p {
-        font-size: 1rem;
-    }
-
-    .textGalletas1 .text1 {
-        margin-top: 3%;
-    }
-
-    .text2 input {
-        top: 260%;
-        left: 100%;
-        font-size: 1.2rem;
-    }
-}
-
-@media screen and (max-width: 550px){
-
-    .imgVec1 img {
-        top: 40%;
-    }
-
-    .imgVec1 .img1 {
-        top: 40.2%;
-    }
-
-    .imgVec2 img {
-        top: 84%;
-    }
-    
-    .imgVec2 .img2 {
-        top: 84.7%;
-    }
-
-    .textGalletas2 .text2 {
-        margin-top: -9%;
-    }
-}
-
-
-@media screen and (max-width: 528px){
-    .text2 input {
-        top: 220%;
-    }
-}
-
-
-@media screen and (max-width: 470px){
-    .textGalletas2 .text2 {
-        margin-top: -25%;
-    }
-
-    .imgVec2 img {
-        top: 80%;
-    }
-    
-    .imgVec2 .img2 {
-        top: 80.7%;
-    }
-
-    .text2 input {
-        top: 190%;
-    }
-}
-
-
-@media screen and (max-width: 400px){
-
-    .imgVec1 img {
-        top: 34%;
-    }
-
-    .imgVec1 .img1 {
-        top: 34.2%;
-    }
-
-    .textGalletas2 .text2 {
-        margin-top: -45%;
-    }
-
-    .imgVec2 img {
-        top: 67%;
-        right: 40%;
-    }
-    
-    .imgVec2 .img2 {
-        top: 67.7%;
-        right: 41.4%;
-    }
-
-    .textGalletas1 .text1 {
-        margin-top: -4%;
-    }
-
-    .text2 input {
-        top: 170%;
-        left: 80%;
-    }
-
-    .text1 p {
-        font-size: .9rem;
-    }
-
-    .text2 p {
-        font-size: .9rem;
-    }
 }
